@@ -3,7 +3,7 @@
   <name>Phase Sync</name>
   <key>rxdrm_phase_sync_cc</key>
   <category>DRM</category>
-  <import>import rxdrm</import>
+  <import>import drm</import>
   <make>rxdrm.phase_sync_cc($fs, $fft_len, $mode)</make>
   <!-- Make one 'param' node for every Parameter you want settable from the GUI.
        Sub-nodes:

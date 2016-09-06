@@ -3,7 +3,7 @@
   <name>Frequency Synchronization</name>
   <key>rxdrm_fsync_cc</key>
   <category>DRM</category>
-  <import>import rxdrm</import>
+  <import>import drm</import>
   <make>rxdrm.fsync_cc($p_integ)</make>
   <!-- Make one 'param' node for every Parameter you want settable from the GUI.
        Sub-nodes:

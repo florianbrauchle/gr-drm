@@ -46,6 +46,7 @@ GR_PYTHON_INSTALL(
     framer_cc.py
     phase_sync_cc.py
     drm_equalizer_cc.py
+	decoder_c.py
 
     DESTINATION ${GR_PYTHON_DIR}/drm
 )

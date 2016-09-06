@@ -3,7 +3,7 @@
   <name>Equalizer</name>
   <key>rxdrm_drm_equalizer_cc</key>
   <category>DRM</category>
-  <import>import rxdrm</import>
+  <import>import drm</import>
   <make>rxdrm.drm_equalizer_cc($p_info)</make>
 
 
