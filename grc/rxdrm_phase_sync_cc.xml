@@ -1,32 +1,49 @@
 <?xml version="1.0"?>
 <block>
-  <name>DRM Partitioning 4-QAM EEP</name>
-  <key>drm_partitioning_4_bb</key>
+  <name>Phase Sync</name>
+  <key>rxdrm_phase_sync_cc</key>
   <category>DRM</category>
-  <import>import drm</import>
-  <make>drm.partitioning_bb($vlen_in, $vlen_out)</make>
+  <import>import rxdrm</import>
+  <make>rxdrm.phase_sync_cc($fs, $fft_len, $mode)</make>
   <!-- Make one 'param' node for every Parameter you want settable from the GUI.
        Sub-nodes:
        * name
        * key (makes the value accessible as $keyname, e.g. in the make node)
        * type -->
+
   <param>
-    <name>Input vector length</name>
-    <key>vlen_in</key>
+    <name>Fs</name>
+    <key>fs</key>
+    <value>0</value>
     <type>int</type>
-    <hide>part</hide>
+    <hide>all</hide>
+  </param>
+
+  <param>
+    <name>Mode</name>
+    <key>mode</key>
+    <value>0</value>
+    <type>int</type>
+    <hide>all</hide>
+    <option>
+        <name>Auto</name>
+        <key>0</key>
+    </option>
+    <option>
+        <name>A</name>
+        <key>1</key>
+    </option>
+    <option>
+        <name>B</name>
+        <key>2</key>
+    </option>
   </param>
   <param>
-    <name>Output vector lengths</name>
-    <key>vlen_out</key>
-    <type>raw</type>
-    <hide>part</hide>
-  </param>
-  <param>
-    <name>Length of output</name>
-    <key>vlen1</key>
+    <name>FFT length</name>
+    <key>fft_len</key>
+    <value>0</value>
     <type>int</type>
-    <hide>part</hide>
+    <hide>all</hide>
   </param>
 
   <!-- Make one 'sink' node per input. Sub-nodes:
@@ -36,7 +53,7 @@
        * optional (set to 1 for optional inputs) -->
   <sink>
     <name>in</name>
-    <type>byte</type>    
+    <type>complex</type>
   </sink>
 
   <!-- Make one 'source' node per output. Sub-nodes:
@@ -45,7 +62,7 @@
        * vlen
        * optional (set to 1 for optional inputs) -->
   <source>
-    <name>out1</name>
-    <type>byte</type>    
+    <name>out</name>
+    <type>complex</type>
   </source>
 </block>

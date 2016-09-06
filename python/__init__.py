@@ -49,6 +49,14 @@ from mlc_factory import make_mlc
 from drm_mlc_4qam_bc import drm_mlc_4qam_bc
 from drm_mlc_16qam_bc import drm_mlc_16qam_bc
 from drm_mlc_64qam_sm_bc import drm_mlc_64qam_sm_bc
+# Receiver
+from md_sel_cc import md_sel_cc
+from fsync_cc import fsync_cc
+from framer_cc import framer_cc
+from phase_sync_cc import phase_sync_cc
+from drm_equalizer_cc import drm_equalizer_cc
+from decoder_c import decoder_c
+
 #
 
 # ----------------------------------------------------------------

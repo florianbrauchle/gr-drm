@@ -35,6 +35,18 @@ GR_PYTHON_INSTALL(
     drm_mlc_4qam_bc.py
     drm_mlc_16qam_bc.py
     drm_mlc_64qam_sm_bc.py
+	# Receiver
+	utility.py
+	drm_parameter.py
+	drm_fac_coding.py
+	drm_sdc_coding.py
+	drm_msc_coding.py
+    md_sel_cc.py
+    fsync_cc.py
+    framer_cc.py
+    phase_sync_cc.py
+    drm_equalizer_cc.py
+
     DESTINATION ${GR_PYTHON_DIR}/drm
 )
 

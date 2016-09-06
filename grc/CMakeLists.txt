@@ -33,5 +33,13 @@ install(FILES
     drm_m3ufile_source_f.xml 
     drm_mlc_bc.xml
     drm_config.xml
+	# Receiver
+    rxdrm_md_sel_cc.xml
+    rxdrm_fsync_cc.xml
+    rxdrm_framer_cc.xml
+    rxdrm_phase_sync_cc.xml
+    rxdrm_drm_equalizer_cc.xml
+    rxdrm_decoder_c.xml
+
     DESTINATION share/gnuradio/grc/blocks
 )

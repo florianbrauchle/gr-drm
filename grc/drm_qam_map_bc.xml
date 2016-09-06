@@ -2,7 +2,7 @@
 <block>
   <name>DRM QAM Mapping</name>
   <key>drm_qam_map_bc</key>
-  <category>[DRM]</category>
+  <category>DRM</category>
   <import>import drm</import>
   <make>drm.qam_map_bc($map_table, $bits_per_symbol, $vlen_out, $n_inputs)</make>
   <!-- Make one 'param' node for every Parameter you want settable from the GUI.

@@ -2,7 +2,7 @@
 <block>
   <name>DRM Configuration</name>
   <key>variable_drm_config</key>
-  <category>[DRM]</category>
+  <category>DRM</category>
   <import>import drm</import>
   <var_make>self.$(id) = $(id) = drm.transm_params($RM, $SO, False, 0, $msc_mapping, 0, $msc_prot_level_2_16 if $msc_mapping()==1 else $msc_prot_level_2_64, $sdc_mapping, 0, $long_interl, $audio_sample_rate, $station_label, $text_message)</var_make>
   <var_value>drm.transm_params($RM, $SO, False, 0, $msc_mapping, 0, $msc_prot_level_2_16 if $msc_mapping()==1 else $msc_prot_level_2_64, $sdc_mapping, 0, $long_interl, $audio_sample_rate, $station_label, $text_message)</var_value>
